@@ -1,3 +1,5 @@
+import pytest
+
 from second.second import greeting
 
 def test_greeting_eng():
@@ -15,3 +17,10 @@ def test_greeting_default():
 # continue by using assert
 # add your changes: git add second/tests/second_test.py
 # commit your changes using commit message conventions (https://inpred.github.io/24-03_bioinfo_ws/#19): git commit -m "test: <your commit message>"
+
+
+def test_greeting():
+    with pytest.raises(TypeError):
+        assert greeting( 2, "Norwegian" ) == None
+
+        
