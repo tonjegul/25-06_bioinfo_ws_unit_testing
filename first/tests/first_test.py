@@ -8,3 +8,13 @@ from first.first import greeting
 # if you like, add other languages to your greeting() function and test for them
 # add your changes: git add first/tests/first_test.py
 # commit your changes using commit message conventions (https://inpred.github.io/24-03_bioinfo_ws/#19): git commit -m "test: <your commit message>"
+
+
+def test_greeting_irish():
+    assert greeting( "Tonje", "Irish" ) == "I don't speak your language!"
+
+def test_greeting_Tonje():
+    assert greeting( "Tonje", "Norwegian" ) == "Hei Tonje!"
+
+
+
